@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +14,12 @@
 <div class="mydiv">
 
     <div class="rectangle" > 
-
         <div class="homeGif">
             <img src="images/homepage.gif" alt="Typing Image" style="width:60vw; height:auto;">
         </div>
         <div class="header">
         <p style="font-size:9vw; text-shadow: 2px 2px 4px #a2a1a1; line-height:80%;"> Barbara <br> Vargas</p>
         </div>
-       
         <div class="icon-bar">     
                 <font size="3vw">
                 <div class="img1">
@@ -44,18 +44,44 @@
                 <figcaption style="width:10vw; height:auto;">Resume</figcaption>
                 </a>
                 </div>
-                </font>
-            
+                </font>      
         
         </div>
         <div class="dot"></div>
 
         <div class="lower-icon">
 
-           <a href=" https://github.com/barbvargas"> <img src="images/github.png" alt="Github Icon" style="width:4vw; height:auto; "></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/barbaracvargas/"><img src="images/linkedin.png" alt="Linkedin Icon" style="width:4vw; height:auto;"></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<img src="images/email.png" alt="Email Icon" onclick="emailForm()" style="width:4vw; height:auto;">
+           <a href=" https://github.com/barbvargas"> <img src="images/github.png" alt="Github Icon" style="width:4vw; height:auto; "></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/barbaracvargas/"><img src="images/linkedin.png" alt="Linkedin Icon" style="width:4vw; height:auto;"></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<img src="images/email.png" alt="Email Icon" onclick="emailForm();" style="width:4vw; height:auto;">
             
         </div>
+        <div class="container" id="formID">
+        <form id= "form" action="/mail.php" method="post">
+            <h1 style="text-align: center; font-weight: 100;">Contact Me</h1>
+            <div class="labels">
+            <label for="name">Your Name:</label><br>
+            <input type="text"  name="name" placeholder="">
+            <br>
+            <label for="lname">Email:</label>
+            <br>
+            <input type="email"  name="email" placeholder="">
+            <br>
+            <label for="message">Message:</label> <br>
+            <textarea type="texxt" name="message" placeholder="" ></textarea>
+            </div>
+            <input type="close" value="Close" onclick="closeForm()" style="width:50px;">
+            <input type="submit" value="Submit" >
+          </form>
+           </div>
 
+          <script>
+            function emailForm() {
+              document.getElementById("formID").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("formID").style.display = "none";
+            }
+            </script>
 
     </div>
 
