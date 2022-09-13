@@ -55,22 +55,32 @@
             
         </div>
         <div class="container" id="formID">
+            <div class="contactHeader"></div>
+
             <img src="images/cancel.png" alt="Cancel Image" style="position:absolute;right:2.5%; width:1.5vw; height:auto;" onclick="closeForm()">
         <form id= "form" action="/mail.php" method="post">
-            <h1 style="text-align: center; font-weight: 100;">Contact Me</h1>
+            <br><br>
+            <h1 style="text-align: center; font-weight: bold; font-family: body-font; ">Let's Talk!</h1>
             <div class="labels">
             <label for="name">Your Name:</label><br>
             <input type="text"  name="name" placeholder="">
-            <br>
+            <br>                        <br>
+            
+
             <label for="lname">Email:</label>
             <br>
             <input type="email"  name="email" placeholder="">
-            <br>
+            <br><br>                        <br>
             <label for="message">Message:</label> <br>
             <textarea type="texxt" name="message" placeholder="" ></textarea>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
             <input type="submit" value="Submit" >
           </form>
+
            </div>
 
           <script>
