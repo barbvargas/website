@@ -43,6 +43,25 @@ div.rectangle {
    
     
   }
+
+  div.rectangleFull {
+    position: absolute;
+    top:50%;
+    bottom:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:55%;
+    height:25%;
+    border-radius: 7%;
+    background:#bc4b2f;
+    box-shadow:  0 0 1em #dbc0b6;
+    padding:20%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
   
   div.dot {
     position: absolute; right:50%; bottom:102%;
@@ -62,7 +81,6 @@ div.rectangle {
 div.icon-bar{
 
     position:absolute; right:1%; top: 50%;
-
     margin:0; 
     transform: translateY(-50%);
   }
@@ -146,7 +164,7 @@ div.terminal {
 }
 
 div.termHeader {
-    position:absolute;
+    position:absolute; 
     text-align: center;
     font-size: 1vw;
     top:5%;
@@ -168,6 +186,11 @@ div.termText {
     src:"GlacialIndifference-Regular.otf";
     font-size: 1.5vw;
     font-weight: lighter;
+}
+
+div.aboutM{
+    position: absolute;  top:-3%; left:40%;
+
 }
 
 div.cancelIcon {
@@ -249,4 +272,87 @@ div.labels {
 }
 
 
- 
+.wrapper {
+    position: absolute;
+    top:50%;
+    bottom:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50.5%;
+    height:20%;
+   /* border-radius: 6%;*/
+    background:#bc4b2f;
+   /* box-shadow:  0 0 1em #dbc0b6;*/
+    padding:20%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tabs {
+    position:absolute; top:-4.3%; left:0%;
+    border-radius: 0%;
+    width:100.1%;
+    margin: 2rem 0;
+    background: #bc4b2f;
+    height: 31.7%;
+
+  }
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  .tabs::after {
+    clear: both;
+  }
+  .tab {
+    float: left;
+  }
+  .tab-switch {
+    display: none;
+  }
+  .tab-label {
+    position:relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #bc4b2f;
+    border-radius: 7%;
+    /*border-right: 0.125rem solid #ede1dd;*/
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+  }
+  .tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+  }
+  .tab-content {
+    height: 276%;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fcf5eb;
+    color: #2c3e50;
+   /*border-bottom: 0.25rem solid #bdc3c7;*/
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  .tab-switch:checked + .tab-label {
+    background: #fcf5eb;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+  }
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
