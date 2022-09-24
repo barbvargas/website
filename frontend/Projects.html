@@ -9,33 +9,84 @@
     
 </head>
 <body>
-    <div class="rectangle">
-            <div class="tabs">
-                <div class="cancelIcon">
+
+        <div class="tabs" >
+                <div class="cancelIconP">
                     <a href="index.html">
-                    <img src="images/cancel.png" alt="Cancel Image" style="width:3vw; height:auto;">
+                    <img src="images/cross.png" alt="Cancel Image" style="width:3vw; height:auto;">
                     </a>
                 </div>
-              <div class="tab">
+
+              <div class="tab" style="font-size:20px;">
+
                 <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-                <label for="tab-1" class="tab-label">Projects</label>
-                <div class="tab-content">My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years. </div>
-              </div>
-              <div class="tab">
+                <label for="tab-1" class="tab-label" style="font-family:cool-font;">Projects</label>
+                <div class="tab-content"> 
+                    
+                </div>
+                </div> 
+
+
+              <div class="tab" style="font-size:20px;">
                 <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-                <label for="tab-2" class="tab-label">Research</label>
-                <div class="tab-content">My father now and then sending me small sums of money, I laid them out in learning navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed it would be, some time or other, my fortune to do. </div>
-              </div>
-              <div class="tab">
-                <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
-                <label for="tab-3" class="tab-label">ioT</label>
-                <div class="tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long voyages.</div>
-              </div>
-            </div>
+                <label for="tab-2" class="tab-label" style="font-family:cool-font;">Research</label>
+                <div class="tab-content">
+                    <h1 style="position:absolute; top:10%; left:7%;"> PAA Pod, a Wearable Device for the Detection of Early Podiatry and Health Issues (In Progress) </h1>
+                    <div class="descripPAA">
+                        The project context is creating a wearable low cost device to aid the detection and analysis of podiatry health issues in a person’s foot posture. The device will measure PPD, inertial motion, foot temperature and more. Later collected data would be paired with a smart system that uses ML to analyze current health patterns as well as predict and alert the user of anomalys. The proposed project is based off of a study conducted on an insole based system for health monitoring, however there aren't many wearable devices on the market that detects health conditions
+                        <br> <br>
+                        <font style="font-family:cool-font;">  
+                        #html &nbsp #css &nbsp  #javascript &nbsp  #ML  &nbsp  #keras &nbsp #pandas &nbsp #embeddedSystems
+                        </font>
+                    </div>
+                    <div class="researchImg1">
+                        <img width="350px" height="250px" src="/images/walking.gif">
+                    </div>
+                    <h1 style="position:absolute; top:96%; left:7%; ">Analyzing Time Based Security in IoT Devices</h1>
+
+                    <div class="description">
+                        
+                        Group focused on creating a way to streamline security in IoT devices to protect users without compromising usability.
+                         Created app and accompanying hardware in order to extract security policies.
+                         Proposed and worked on creating a framework and DSL language that allows developers to implement security policies using a label-based approach. 
+                         <a style="font-size: small; " href="https://github.com/barbvargas/Smart-Lock-Web-App-master">Github Link</a>
+                         <br> <br>
+                         <font style="font-family:cool-font;">  
+                         #html &nbsp #css &nbsp #nodejs  &nbsp  #raspberypi &nbsp #json &nbsp #bootstrap &nbsp #javascript
+                         </font>
+                         
+                     </div>
+
+                     <div class="researchImg" id="div1">
+                        <img id="image1" width="350px" height="250px" styles="top:10%; right:10%;" onclick="enlargeImg()" src="/images/researchImg.jpg">
+                     </div>
+                     <script>
+                        function enlargeImg(){
+                            var theImage = document.getElementById("image1");
+
+                            if(theImage.clientWidth <= 350){
+                            theImage.width = theImage.width *2;
+                            theImage.height = theImage.height *2;
+                            toggle=1;
+                            }
+                            else{
+                            theImage.width = theImage.width/2;
+                            theImage.height = theImage.height/2;
+                            toggle=0;
+                                
+                            }
+                        };
+                     </script>    
+                              
+                 </div>
+                </div>  
 
 
-          
-    </div>
+              
            
+    </div>
+
+    <div class="rectangle1"></div>
+
 </body>
 </html>

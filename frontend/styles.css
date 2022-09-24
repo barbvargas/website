@@ -44,6 +44,25 @@ div.rectangle {
     
   }
 
+  div.rectangle1{
+    position: fixed;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height:20%;
+    border-radius: 5%;
+    border-color:black;
+    padding: 20%;
+    border: 3vw solid #bc4b2f;
+    background-color: #bc4b2f;
+    z-index: -1;
+
+   
+    
+  }
+
+
   div.rectangleFull {
     position: absolute;
     top:50%;
@@ -53,7 +72,6 @@ div.rectangle {
     width:55%;
     height:25%;
     border-radius: 7%;
-    background:#bc4b2f;
     box-shadow:  0 0 1em #dbc0b6;
     padding:20%;
     display:block;
@@ -197,6 +215,10 @@ div.cancelIcon {
     position: absolute; right:2%; top:2%;
 
 }
+div.cancelIconP {
+    position: fixed; right:4.75%; top:3.5%;
+
+}
 div.contactHeader {
     background-color: rgb(92, 88, 93);
     position:absolute; top:0px; right:0px; 
@@ -270,7 +292,7 @@ div.labels {
 
 
 }
-
+/*
 
 .wrapper {
     position: absolute;
@@ -280,22 +302,36 @@ div.labels {
     transform:translate(-50%,-50%);
     width:50.5%;
     height:20%;
-   /* border-radius: 6%;*/
+ border-radius: 6%;
     background:#bc4b2f;
-   /* box-shadow:  0 0 1em #dbc0b6;*/
+   ox-shadow:  0 0 1em #dbc0b6;
     padding:20%;
     display:block;
     margin-left: auto;
     margin-right: auto;
   }
+  */
+  
   .tabs {
-    position:absolute; top:-4.3%; left:0%;
+    position:fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2.5%;
+    right:6.5%;
+    width:90%;
+    border-radius: 7%;
+    /*
+    position:absolute; top:0%; left:0%;
     border-radius: 0%;
     width:100.1%;
     margin: 2rem 0;
+    */
     background: #bc4b2f;
+    /*
     height: 31.7%;
-
+    z-index: -1;
+*/
   }
   .tabs::before,
   .tabs::after {
@@ -315,31 +351,39 @@ div.labels {
     position:relative;
     display: block;
     line-height: 2.75em;
-    height: 3em;
-    padding: 0 1.618em;
+    height: 3.5em;
+    padding: 0 2em;
     background: #bc4b2f;
-    border-radius: 7%;
+    border-radius: 6%;
     /*border-right: 0.125rem solid #ede1dd;*/
-    color: #fff;
+    color: #FAF9F6;
+    font-size: 23px;
+    font-weight:1px ;
     cursor: pointer;
     top: 0;
     transition: all 0.25s;
   }
+
+
   .tab-label:hover {
     top: -0.25rem;
     transition: top 0.25s;
   }
   .tab-content {
-    height: 276%;
     position: absolute;
-    z-index: 1;
-    top: 2.75em;
+    overflow: scroll;
+    border-radius: 0 0 1% 1%;
+    /*z-index: -10;*/
+    top: 3em;
     left: 0;
-    padding: 1.618rem;
+    padding: 25%;
+    height:80%;
+    max-height:80%;
     background: #fcf5eb;
     color: #2c3e50;
    /*border-bottom: 0.25rem solid #bdc3c7;*/
-    opacity: 0;
+    opacity: 1;
+    width:50%;
     transition: all 0.35s;
   }
   .tab-switch:checked + .tab-label {
@@ -356,3 +400,35 @@ div.labels {
     opacity: 1;
     transition: all 0.35s;
   }
+
+div.researchImg {
+    position:block; top:120%; left:7%;
+    position:absolute;
+ }
+
+ div.researchImg1{
+    position:block; top:40%; left:7%;
+    position:absolute;
+ }
+
+  
+div.description {
+    display:block;
+    position:absolute;
+    width:50%;
+    right:8%;
+    top:120%;
+    
+   
+}
+
+div.descripPAA {
+    display:block;
+    position:absolute;
+    width:50%;
+    right:8%;
+    top:40%;
+
+}
+
+
