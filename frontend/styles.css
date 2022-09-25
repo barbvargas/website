@@ -411,6 +411,13 @@ div.researchImg {
     position:absolute;
  }
 
+ div.researchImg2 {
+    display:block;
+    position:absolute;
+    top:30%;
+    left:5%;
+ }
+
   
 div.description {
     display:block;
@@ -431,4 +438,29 @@ div.descripPAA {
 
 }
 
+div.projectD1 {
+    display:block;
+    position:absolute;
+    width:50%;
+    right:8%;
+    top:32%;
+
+}
+
+div.edu {
+  display:block;
+  position:absolute;
+  left:7%;
+  top:27%;
+
+}
+
+div.edu1 {
+  display:block;
+  position:absolute;
+  left:7%;
+  top:52%;
+
+
+}
 
